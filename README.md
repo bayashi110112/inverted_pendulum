@@ -7,7 +7,7 @@
 ## What to use
 * Arduino nano
 * Potentiometer
-* Motor Driver* 
+* Motor Driver (TA7291P)
 * Breadboard
 * Bearing
 * Two wheels
