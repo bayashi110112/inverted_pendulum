@@ -13,7 +13,6 @@ const double Ki = 0.03;
 const double Kd = 8.0; 
 
 void setup() {
-  //Serial.begin(9600);
   pinMode(6, OUTPUT);
   pinMode(7, OUTPUT);
   pinMode(8, OUTPUT);
@@ -41,7 +40,6 @@ void pid_ctl() {
   old_err = err;
   err = pot_target - pot_current;       //偏差=目標値-制御値
   err_Integral += err * 0.001;   //偏差の積分 1ms
-  //err_Integral += (old_err + err) / 2.0 * 0.001;   //偏差の積分 1ms
 
   P = Kp * err;
   I = Ki * err_Integral;
@@ -49,5 +47,4 @@ void pid_ctl() {
   pid = P + I + D;
 
   output = constrain(pid, -255, 255); //-255~255範囲
-  //I = Ki * err_sum;　D = Kd * (err - old_err);
 }
