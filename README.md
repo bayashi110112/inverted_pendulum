@@ -9,7 +9,8 @@ There are few introductions of inverted pendulum using potentiometer. It is cons
 * Arduino nano
 * Potentiometer
 * Motor
-* Motor Driver (TA7291P)
+* Motor Driver (TOSHIBA TA7291P)
 * Breadboard
 * Bearing
-* Two wheels
+* Two wheels (TAMIYA NARROW TIRE SET)
+* 3-speed crank gear box set (TAMIYA)
