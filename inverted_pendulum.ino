@@ -16,7 +16,6 @@ void setup() {
   pinMode(6, OUTPUT);
   pinMode(7, OUTPUT);
   pinMode(8, OUTPUT);
-  delay(1000);
 
   MsTimer2::set(1, pid_ctl); // 割り込み関数定義 1msごとにオンオフ
   MsTimer2::start();
